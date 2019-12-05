@@ -63,9 +63,9 @@
 },
 "import : test" : {
 	"scope"  : "javascript,javascriptreact",
-	"prefix" : "import--test",
+	"prefix" : "import--tester",
 	"body"   : [
-		"import ${2:${1}} from 'tests/${1:module}';${0}",
+		"import ${2:${1}} from 'testers/${1:module}';${0}",
 	],
 },
 "import : tool" : {
@@ -141,12 +141,12 @@
 		"${0}",
 	],
 },
-"imports : tests" : {
+"imports : testers" : {
 	"scope"  : "javascript,javascriptreact",
-	"prefix" : "imports--tests",
+	"prefix" : "imports--testers",
 	"body"   : [
-		"/// tests ///",
-		"import ${2:${1}} from 'tests/${1:module}';",
+		"/// testers ///",
+		"import ${2:${1}} from 'testers/${1:module}';",
 		"${0}",
 	],
 },
