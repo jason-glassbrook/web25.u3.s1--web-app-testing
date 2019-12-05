@@ -9,6 +9,16 @@ import Display from 'components/Display';
 import 'styles/App.css';
 
 /***************************************
+  STATES
+***************************************/
+const init = {
+  'hits'    : 0,
+  'balls'   : 0,
+  'fouls'   : 0,
+  'strikes' : 0,
+};
+
+/***************************************
   COMPONENT
 ***************************************/
 const App = () => {
