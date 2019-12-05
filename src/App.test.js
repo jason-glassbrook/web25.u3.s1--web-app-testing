@@ -1,9 +1,8 @@
-/// external modules ///
-import React from 'react';
-import { render } from '@testing-library/react';
-
 /// components ///
 import App from './App';
+
+/// testers ///
+import renders from 'testers/renders';
 
 /***************************************
   TESTING
@@ -13,8 +12,4 @@ const what = {
   Component : App,
 };
 
-test (`${what.name} renders without crashing`, () => {
-  const component = render (<what.Component/>);
-  
-  component.unmount ();
-});
+renders (what.name, what.Component);
