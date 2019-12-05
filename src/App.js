@@ -11,7 +11,7 @@ import 'styles/App.css';
 /***************************************
   COMPONENT
 ***************************************/
-function App () {
+export function App () {
   return (
     <div className='App'>
       <Display/>

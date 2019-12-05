@@ -9,7 +9,7 @@ const init = {};
 /***************************************
   COMPONENT
 ***************************************/
-const Dashboard = (props) => {
+export const Dashboard = (props) => {
   return (
     <div className='Dashboard'>Dashboard</div>
   );
