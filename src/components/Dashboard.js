@@ -2,14 +2,9 @@
 import React from 'react';
 
 /***************************************
-  STATES
-***************************************/
-const init = {};
-
-/***************************************
   COMPONENT
 ***************************************/
-export const Dashboard = (props) => {
+const Dashboard = (props) => {
   return (
     <div className='Dashboard'>Dashboard</div>
   );
@@ -17,3 +12,7 @@ export const Dashboard = (props) => {
 
 /**************************************/
 export default Dashboard;
+
+export {
+  Dashboard,
+};

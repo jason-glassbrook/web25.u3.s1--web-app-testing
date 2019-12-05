@@ -11,7 +11,7 @@ import 'styles/App.css';
 /***************************************
   COMPONENT
 ***************************************/
-export function App () {
+const App = () => {
   return (
     <div className='App'>
       <Display/>
@@ -22,3 +22,8 @@ export function App () {
 
 /**************************************/
 export default App;
+
+export {
+  App,
+  init,
+};
