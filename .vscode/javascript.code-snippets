@@ -54,13 +54,6 @@
 		"import ${2:${1}} from 'data/${1:module}';${0}",
 	],
 },
-"import : style" : {
-	"scope"  : "javascript,javascriptreact",
-	"prefix" : "import--style",
-	"body"   : [
-		"import ${2:${1}} from 'styles/${1:module}';${0}",
-	],
-},
 "import : test" : {
 	"scope"  : "javascript,javascriptreact",
 	"prefix" : "import--tester",
@@ -129,15 +122,6 @@
 	"body"   : [
 		"/// hooks ///",
 		"import ${2:${1}} from 'hooks/${1:module}';",
-		"${0}",
-	],
-},
-"imports : styles" : {
-	"scope"  : "javascript,javascriptreact",
-	"prefix" : "imports--styles",
-	"body"   : [
-		"/// styles ///",
-		"import ${2:${1}} from 'styles/${1:module}';",
 		"${0}",
 	],
 },

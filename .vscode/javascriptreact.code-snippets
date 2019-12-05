@@ -20,21 +20,21 @@
 /// IMPORT
 ///%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 "import : style" : {
-	"scope"  : "javascriptreact",
+	"scope"  : "javascript,javascriptreact",
 	"prefix" : "import--style",
 	"body"   : [
-		"import '${2:./styles}/${1:sheet.css}';${0}",
+		"import ${2:${1}} from 'styles/${1:module}';${0}",
 	],
 },
 ///%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 /// IMPORTS
 ///%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 "imports : styles" : {
-	"scope"  : "javascriptreact",
+	"scope"  : "javascript,javascriptreact",
 	"prefix" : "imports--styles",
 	"body"   : [
 		"/// styles ///",
-		"import '${2:./styles}/${1:sheet.css}';",
+		"import ${2:${1}} from 'styles/${1:module}';",
 		"${0}",
 	],
 },
