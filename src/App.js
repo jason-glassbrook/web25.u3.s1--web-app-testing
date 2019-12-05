@@ -2,7 +2,7 @@
 import React from 'react';
 
 /// styles ///
-import './styles/App.css';
+import 'styles/App.css';
 
 /***************************************
   COMPONENT
