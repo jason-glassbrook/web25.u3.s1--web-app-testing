@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 /// internal modules ///
-import Flex from 'components/Flex';
+import Flex from 'components/basics/Flex';
 
 /// styles ///
 import './styles.css';
