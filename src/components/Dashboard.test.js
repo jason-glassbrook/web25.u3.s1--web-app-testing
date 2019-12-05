@@ -2,11 +2,11 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 
-/// internal modules ///
+/// components ///
 import Dashboard from './Dashboard';
 
 /***************************************
-  TEST
+  TESTING
 ***************************************/
 const what = {
   name : 'Dashboard',
