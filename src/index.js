@@ -2,7 +2,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-/// internal modules ///
+/// components ///
 import App from './App';
 
 /// styles ///
