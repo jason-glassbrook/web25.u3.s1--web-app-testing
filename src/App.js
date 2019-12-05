@@ -1,6 +1,10 @@
 /// external modules ///
 import React from 'react';
 
+/// components ///
+import Dashboard from 'components/Dashboard';
+import Display from 'components/Display';
+
 /// styles ///
 import 'styles/App.css';
 
@@ -10,6 +14,8 @@ import 'styles/App.css';
 function App () {
   return (
     <div className='App'>
+      <Display/>
+      <Dashboard/>
     </div>
   );
 }
