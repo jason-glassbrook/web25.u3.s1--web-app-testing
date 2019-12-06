@@ -22,7 +22,11 @@ const Display = ({ game, ...props }) => {
   return (
     <FlexRow className='Display'>{
       Object.entries (game).map (([name, value]) => (
-        <DisplayItem key={name} name={name} value={value}/>
+        <DisplayItem
+        key={name}
+        name={name}
+        value={value}
+        />
       ))
     }</FlexRow>
   );
