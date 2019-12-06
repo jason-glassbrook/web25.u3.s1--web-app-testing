@@ -15,12 +15,12 @@ import 'styles/App.css';
   COMPONENT
 ***************************************/
 const App = () => {
-  const [ game , setGame ] = baseball.useGame ();
+  const [ values, , offsetters ] = baseball.useGame ();
 
   return (
     <div className='App'>
-      <Display game={game}/>
-      <Controls setGame={setGame}/>
+      <Display values={values}/>
+      <Controls values={values} offsetters={offsetters}/>
     </div>
   );
 }

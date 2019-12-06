@@ -18,10 +18,10 @@ const DisplayItem = ({ name, value }) => {
   );
 };
 
-const Display = ({ game, ...props }) => {
+const Display = ({ values, ...props }) => {
   return (
     <FlexRow className='Display'>{
-      Object.entries (game).map (([name, value]) => (
+      Object.entries (values).map (([name, value]) => (
         <DisplayItem
         key={name}
         name={name}

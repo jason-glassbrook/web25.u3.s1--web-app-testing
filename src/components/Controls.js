@@ -9,22 +9,25 @@ import FlexRow from 'components/FlexRow';
 /***************************************
   COMPONENT
 ***************************************/
-const ControlsItem = ({ name, value }) => {
+const ControlsItem = ({ name, offset }) => {
   return (
-    <button className='ControlsItem'>
+    <button
+    className='ControlsItem'
+    onClick={offset}
+    >
       increment {name}
     </button>
   );
 };
 
-const Controls = ({ game, setGame, ...props }) => {
+const Controls = ({ values, offsetters, ...props }) => {
   return (
     <FlexRow className='Controls'>{
-      Object.keys (game).map ((name) => (
+      Object.keys (values).map ((name) => (
         <ControlsItem
         key={name}
         name={name}
-        setItem={(value) => {setGame ({ [name] : value })}}
+        offset={(x) => {offsetters[name] (x)}}
         />
       ))
     }</FlexRow>
