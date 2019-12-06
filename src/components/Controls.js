@@ -1,17 +1,33 @@
 /// external modules ///
 import React from 'react';
 
+// import styled from 'styled-components';
+
 /// components ///
 import FlexRow from 'components/FlexRow';
 
 /***************************************
   COMPONENT
 ***************************************/
-const Controls = (props) => {
+const ControlsItem = ({ name, value }) => {
   return (
-    <FlexRow className='Controls'>
-      Controls
-    </FlexRow>
+    <button className='ControlsItem'>
+      increment {name}
+    </button>
+  );
+};
+
+const Controls = ({ game, setGame, ...props }) => {
+  return (
+    <FlexRow className='Controls'>{
+      Object.keys (game).map ((name) => (
+        <ControlsItem
+        key={name}
+        name={name}
+        setItem={(value) => {setGame ({ [name] : value })}}
+        />
+      ))
+    }</FlexRow>
   );
 };
 
