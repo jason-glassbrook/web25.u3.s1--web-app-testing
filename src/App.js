@@ -21,7 +21,7 @@ const App = () => {
     <div className='App'>
       <Display game={game}/>
       <Controls setGame={setGame}/>
-      </div>
+    </div>
   );
 }
 
