@@ -6,10 +6,10 @@ import styled from 'styled-components';
 ***************************************/
 const FlexCol = styled.div `
   display: flex;
-  flex-flow: row nowrap;
-  align-content: center;
+  flex-flow: column nowrap;
+  align-content: stretch;
   justify-content: space-around;
-  align-items: stretch;
+  align-items: center;
 `;
 
 /**************************************/

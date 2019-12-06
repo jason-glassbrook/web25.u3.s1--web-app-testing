@@ -7,9 +7,9 @@ import styled from 'styled-components';
 const FlexRow = styled.div `
   display: flex;
   flex-flow: row nowrap;
-  align-content: center;
+  align-content: stretch;
   justify-content: space-around;
-  align-items: stretch;
+  align-items: center;
 `;
 
 /**************************************/
