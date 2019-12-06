@@ -27,7 +27,7 @@ const Controls = ({ values, offsetters, ...props }) => {
         <ControlsItem
         key={name}
         name={name}
-        offsetter={(x) => {offsetters[name] (x)}}
+        offsetter={(event) => {offsetters[name] (1)}}
         />
       ))
     }</FlexRow>
