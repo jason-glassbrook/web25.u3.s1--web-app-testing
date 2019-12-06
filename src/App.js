@@ -5,27 +5,22 @@ import React from 'react';
 import Dashboard from 'components/Dashboard';
 import Display from 'components/Display';
 
+/// hooks ///
+import baseball from 'hooks/baseball';
+
 /// styles ///
 import 'styles/App.css';
-
-/***************************************
-  STATES
-***************************************/
-const init = {
-  'hits'    : 0,
-  'balls'   : 0,
-  'fouls'   : 0,
-  'strikes' : 0,
-};
 
 /***************************************
   COMPONENT
 ***************************************/
 const App = () => {
+  const [ game , setGame ] = baseball.useGame ();
+
   return (
     <div className='App'>
-      <Display/>
-      <Dashboard/>
+      <Display game={game}/>
+      <Dashboard setGame={setGame}/>
     </div>
   );
 }
@@ -35,5 +30,4 @@ export default App;
 
 export {
   App,
-  init,
 };
