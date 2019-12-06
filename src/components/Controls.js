@@ -9,7 +9,7 @@ import FlexRow from 'components/FlexRow';
 /***************************************
   COMPONENT
 ***************************************/
-const ControlsItem = ({ name, offset }) => {
+const ControlsItem = ({ name, offset, ...props }) => {
   return (
     <button
     className='ControlsItem'

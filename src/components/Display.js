@@ -9,7 +9,7 @@ import FlexCol from 'components/FlexCol';
 /***************************************
   COMPONENT
 ***************************************/
-const DisplayItem = ({ name, value }) => {
+const DisplayItem = ({ name, value, ...props }) => {
   return (
     <FlexCol className='DisplayItem'>
       <header>{name}</header>
