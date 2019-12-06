@@ -35,10 +35,15 @@ const useBaseballGame = (init) => {
   );
 
   const values = { balls, fouls, hits, strikes };
-  const setters = { setBalls, setFouls, setHits, setStrikes };
+  const setters = {
+    balls   : setBalls,
+    fouls   : setFouls,
+    hits    : setHits,
+    strikes : setStrikes,
+  };
   const offsetters = Object.fromEntries (Object.entries (setters).map (
     ([item, setItem]) => ([
-      `off${item}`,
+      item,
       (x) => (setItem ((value) => (value + x)))
     ])
   ));
