@@ -1,12 +1,17 @@
 /// external modules ///
 import React from 'react';
 
+/// components ///
+import FlexRow from 'components/FlexRow';
+
 /***************************************
   COMPONENT
 ***************************************/
 const Display = (props) => {
   return (
-    <div className='Display'>Display</div>
+    <FlexRow className='Display'>
+      Display
+    </FlexRow>
   );
 };
 
