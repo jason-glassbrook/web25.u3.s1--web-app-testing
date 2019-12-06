@@ -9,11 +9,11 @@ import FlexRow from 'components/FlexRow';
 /***************************************
   COMPONENT
 ***************************************/
-const ControlsItem = ({ name, offset, ...props }) => {
+const ControlsItem = ({ name, offsetter, ...props }) => {
   return (
     <button
     className='ControlsItem'
-    onClick={offset}
+    onClick={offsetter}
     >
       increment {name}
     </button>
@@ -27,7 +27,7 @@ const Controls = ({ values, offsetters, ...props }) => {
         <ControlsItem
         key={name}
         name={name}
-        offset={(x) => {offsetters[name] (x)}}
+        offsetter={(x) => {offsetters[name] (x)}}
         />
       ))
     }</FlexRow>
