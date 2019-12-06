@@ -2,7 +2,7 @@
 import React from 'react';
 
 /// components ///
-import Dashboard from 'components/Dashboard';
+import Controls from 'components/Controls';
 import Display from 'components/Display';
 
 /// hooks ///
@@ -20,8 +20,8 @@ const App = () => {
   return (
     <div className='App'>
       <Display game={game}/>
-      <Dashboard setGame={setGame}/>
-    </div>
+      <Controls setGame={setGame}/>
+      </div>
   );
 }
 

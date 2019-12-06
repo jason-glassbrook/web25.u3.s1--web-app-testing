@@ -4,15 +4,15 @@ import React from 'react';
 /***************************************
   COMPONENT
 ***************************************/
-const Dashboard = (props) => {
+const Controls = (props) => {
   return (
-    <div className='Dashboard'>Dashboard</div>
+    <div className='Controls'>Controls</div>
   );
 };
 
 /**************************************/
-export default Dashboard;
+export default Controls;
 
 export {
-  Dashboard,
+  Controls,
 };

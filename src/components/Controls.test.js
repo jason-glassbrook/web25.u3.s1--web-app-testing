@@ -1,6 +1,6 @@
 /// external modules ///
 /// components ///
-import Dashboard from './Dashboard';
+import Controls from './Controls';
 
 /// testers ///
 import renders from 'testers/renders';
@@ -9,8 +9,8 @@ import renders from 'testers/renders';
   TESTING
 ***************************************/
 const what = {
-  name : 'Dashboard',
-  Component : Dashboard,
+  name : 'Controls',
+  Component : Controls,
 };
 
 renders (what.name, what.Component);
